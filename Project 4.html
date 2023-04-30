@@ -1,0 +1,148 @@
+<body>
+    <link rel="stylesheet" href="Project_CSS.css">
+      <!-- START NAVBAR -->
+      <div id="wrapper1" class="container-fluid">
+        <nav class="navigation">
+          <div class="left">
+            <div class="logo">Panos Varoutsos</div>
+            <div class="sublogo">Architecture</div>
+          </div>
+    
+          <div class="right">
+            <ul>
+              <li><a href="#aboutme">ABOUT</a></li>
+              <li><a href="panagiotis varoutsos_5600146_HTML.html">PROJECTS</a></li>
+              <li><a href="#footer">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+    
+        <!-- END NAVBAR -->
+
+<!-- Slideshow container -->
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="project3/p3_1.jpg" style="width:100%">
+    <div class="text">Perspective view of the design</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="project3/p3_2.jpg" style="width:100%">
+    <div class="text">Axonometric explode of floors</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="project3/p3_3.jpg" style="width:100%">
+    <div class="text">Section and construction details</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="project3/p3_4.jpg" style="width:100%">
+    <div class="text">Perspective view from top floor </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="project3/p3_5.jpg" style="width:100%">
+    <div class="text">Auditorium-underground floor view</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="project3/p3_6.jpg" style="width:100%">
+    <div class="text">Restaurant-top floor view</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="project3/p3_7.jpg" style="width:100%">
+    <div class="text">Double section model of the core</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+// Next/previous controls
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<!-- Project description-->
+
+<div id="aboutme" class="container-fluid">
+    <div class="row" style="padding-top: 50px">
+      <div class="col-md-8">
+        <p style="text-align:justify;">
+          <BR><b><font size=4>A New Museum for the city of Athens</font></b></BR>
+          <br> </br>
+          <br><b>Status:</b><font size=2> &nbsp;  &nbsp; Academic-Architectural Design 7-8</font></br>
+          <br><b>Program:</b><font size=2> &nbsp;  &nbsp;  Historic Museum at the city center</font></br>
+          <br><b>Year:</b><font size=2> &nbsp;  &nbsp; 2017</font></br>
+          <br><b>Location:</b><font size=2> &nbsp;  &nbsp; Konstantinou Paparigopoulou 9, Klafthmonos Square, Greece</font></br>
+          <br><b>Team:</b><font size=2> &nbsp;  &nbsp; Panagiotis Varoutsos, Michalos Polyzos, Tina Papanikolaou</font></br>
+          <br> </br>
+
+          <br>Situated on the historic centre of the city of Athens stands the museum of the city. The buildings 
+          that the museum is housed were the original palace of the first Greek monarch, King Othon 
+          A’ ,and were in use during 1836-1843. The present project acts as an expansion of the current 
+          complex in order to allow the museum experience and the more efficient artefact and exhibit 
+          exposition. The new building is operating as the link between the existing museum, the extension 
+          that is part of the proposal and the urban fabric. Simultaneously, its geometry and program of 
+          uses present the possibility of visual relationship between the city and the exhibition, rendering 
+          the city itself as part of the exhibition experienced during the visit to the museum.
+          The building being as complex and vast as a museum is supposed to be was studied even 
+          further so as to solve a range of static and building material problems that have risen during the 
+          process. Construction drawings and details in scales ranging from 1:100 to 1:10</br>
+          </p>
+      </div>
+
+      </div>.
+    </div>
+  </div>
